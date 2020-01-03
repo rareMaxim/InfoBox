@@ -1,0 +1,70 @@
+object SimpleFMXBrowserFrm: TSimpleFMXBrowserFrm
+  Left = 0
+  Top = 0
+  Caption = 'Initializing browser. Please wait...'
+  ClientHeight = 600
+  ClientWidth = 917
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  OnDeactivate = FormDeactivate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 300
+    OnTimer = Timer1Timer
+    Left = 40
+    Top = 129
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 40
+    Top = 192
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 917.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Button1: TButton
+      Align = Left
+      Size.Width = 80.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 0
+      Text = #1053#1072#1079#1072#1076
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Position.X = 85.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 1
+      Text = #1043#1086#1083#1086#1074#1085#1072
+      OnClick = Button2Click
+    end
+  end
+  object FMXChromium1: TFMXChromium
+    OnBeforeContextMenu = FMXChromium1BeforeContextMenu
+    OnContextMenuCommand = FMXChromium1ContextMenuCommand
+    OnBeforePopup = FMXChromium1BeforePopup
+    OnAfterCreated = FMXChromium1AfterCreated
+    OnBeforeClose = FMXChromium1BeforeClose
+    OnClose = FMXChromium1Close
+    Left = 40
+    Top = 65
+  end
+end
