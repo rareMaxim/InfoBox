@@ -1,0 +1,3 @@
+[submodule "modules/CEF4Delphi"]
+	path = modules/CEF4Delphi
+	url = https://github.com/salvadordf/CEF4Delphi.git
