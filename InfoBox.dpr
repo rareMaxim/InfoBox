@@ -1,4 +1,4 @@
-program SimpleFMXBrowser;
+program InfoBox;
 
 uses
   System.StartUpCopy,

@@ -3,7 +3,7 @@
         <ProjectGuid>{5967B4A4-5E6D-420E-B524-A52A1240AC82}</ProjectGuid>
         <ProjectVersion>18.8</ProjectVersion>
         <FrameworkType>FMX</FrameworkType>
-        <MainSource>SimpleFMXBrowser.dpr</MainSource>
+        <MainSource>InfoBox.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -52,7 +52,7 @@
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
-        <SanitizedProjectName>SimpleFMXBrowser</SanitizedProjectName>
+        <SanitizedProjectName>InfoBox</SanitizedProjectName>
         <VerInfo_Locale>3082</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DCC_Define>$(FrameworkType);$(DCC_Define)</DCC_Define>
@@ -122,7 +122,7 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">SimpleFMXBrowser.dpr</Source>
+                    <Source Name="MainSource">InfoBox.dpr</Source>
                 </Source>
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
@@ -135,9 +135,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win32\Debug\SimpleFMXBrowser.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Win32\Debug\InfoBox.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>SimpleFMXBrowser.exe</RemoteName>
+                        <RemoteName>InfoBox.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

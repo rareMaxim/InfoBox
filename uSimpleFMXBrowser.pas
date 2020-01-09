@@ -59,7 +59,6 @@ type
   TSimpleFMXBrowserFrm = class(TForm)
     FMXChromium1: TFMXChromium;
     Timer1: TTimer;
-    SaveDialog1: TSaveDialog;
     Button1: TButton;
     Button2: TButton;
     Layout1: TLayout;
