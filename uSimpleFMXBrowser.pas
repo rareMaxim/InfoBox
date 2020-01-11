@@ -215,6 +215,7 @@ begin
   // For simplicity, this demo blocks all popup windows and new tabs
   Result := (targetDisposition in [WOD_NEW_FOREGROUND_TAB,
     WOD_NEW_BACKGROUND_TAB, WOD_NEW_POPUP, WOD_NEW_WINDOW]);
+  FMXChromium1.LoadURL(targetUrl);
 end;
 
 procedure TSimpleFMXBrowserFrm.FMXChromium1Close(Sender: TObject;
